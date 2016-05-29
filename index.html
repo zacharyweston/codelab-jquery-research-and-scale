@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trip Mileage Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Road Trip Gas Money Calculator</h1>
+    <div class="gasCalculator">
+      <div>
+        <label for="numberOfRiders">Number of Riders:</label>
+        <input value="1" type="number" min="1" max="5" class="numberOfRiders">
+      </div>
+      <div>
+        <label for="totalMiles">Total Miles:</label>
+        <input type="number" value="0" min="0" class="totalMiles">
+      </div>
+      <div>
+        <label for="mileageRate">Mileage Rate:</label>
+        <input type="number" value="0.50" min="0.1" class="mileageRate">
+      </div>
+    </div>
+    <h2>Each rider pays:</h2>
+    <div class="results">
+      $0.00
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
