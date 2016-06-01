@@ -14,11 +14,11 @@ $('.gasCalculator').each(function() {
   // ---------
 
   function showResults() {
-    var $total = ( $mileageRate.val() * $totalMiles.val() / $riders.val() )
+    var total = ( $mileageRate.val() * $totalMiles.val() / $riders.val() )
     $('.results').html(function() {
-      return "$" + $total
+      return "$" + total.toFixed(2);
     })
-    if ($total >= 50 ) {
+    if (total >= 50 ) {
       $('.results').addClass( 'expensive' )
     }
     else {
